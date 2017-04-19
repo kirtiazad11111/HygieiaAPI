@@ -16,7 +16,7 @@ cat > dashboard.properties <<EOF
 dbname=${SPRING_DATA_MONGODB_DATABASE:-dashboard}
 
 #Database HostName - default is localhost
-dbhost=${SPRING_DATA_MONGODB_HOST:-54.201.54.144}
+dbhost=${SPRING_DATA_MONGODB_HOST:-34.210.55.73}
 
 #Database Port - default is 27017
 dbport=${SPRING_DATA_MONGODB_PORT:-27017}
