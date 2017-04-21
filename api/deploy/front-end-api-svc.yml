@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: front-end-api
+  labels:
+    name: front-end-api
+  namespace: hygieia
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    targetPort: 8080
+    nodePort: 30054
+  selector:
+    name: front-end-api 

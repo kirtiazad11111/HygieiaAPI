@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: front-end-api
+  namespace: hygieia
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: front-end-api
+    spec:
+      containers:
+      - name: front-end-api
+        image: 54.202.111.181:8123/hygieia_api:latest
+        resources:
+          requests:
+            cpu: 700m
+            memory: 500Mi
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: nexusregistrykey2
