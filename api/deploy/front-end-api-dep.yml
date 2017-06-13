@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: front-end-api
-        image: 54.202.110.124:8123/hygieia_api:latest
+        image: 34.211.149.74:8123/hygieia_api:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:
